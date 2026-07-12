@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Jobsift Privacy Policy, last updated 12 July 2026." name="description"/>
+<meta content="index, follow" name="robots"/>
+<title>Jobsift Privacy Policy</title>
+<style>
+    :root {
+      color-scheme: light;
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --primary-soft: #eef2ff;
+      --accent: #0ea5a4;
+      --accent-dark: #0f766e;
+      --accent-soft: #ecfdfd;
+      --success: #22c55e;
+      --success-dark: #15803d;
+      --success-soft: #f0fdf4;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-soft: #f1f5f9;
+      --text: #0f172a;
+      --muted: #5b6475;
+      --line: #e2e8f0;
+      --heading-font: "Area Normal Extrabold", "Area", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --body-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --shadow: 0 18px 48px rgba(15, 23, 42, 0.09);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      font-size: 16px;
+      line-height: 1.72;
+      text-rendering: optimizeLegibility;
+    }
+
+    a { color: var(--primary); text-underline-offset: 3px; }
+    a:hover { color: var(--primary-dark); }
+
+    .site-header {
+      background:
+        radial-gradient(circle at 88% 18%, rgba(255,255,255,0.16), transparent 28%),
+        linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 52%, var(--accent) 100%);
+      color: #fff;
+      padding: 54px 24px 48px;
+    }
+
+    .header-inner { max-width: 1180px; margin: 0 auto; }
+    .eyebrow {
+      margin: 0 0 8px;
+      font-family: var(--heading-font);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      opacity: 0.82;
+    }
+    h1 {
+      margin: 0;
+      font-family: var(--heading-font);
+      font-weight: 800;
+      max-width: 800px;
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+    .header-summary {
+      max-width: 780px;
+      margin: 20px 0 0;
+      font-size: 1.08rem;
+      color: rgba(255,255,255,0.88);
+    }
+    .dates {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin-top: 24px;
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.9);
+    }
+    .dates span {
+      display: inline-flex;
+      gap: 7px;
+      align-items: center;
+      padding: 6px 11px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(210px, 270px) minmax(0, 820px);
+      gap: 36px;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 42px 24px 72px;
+      align-items: start;
+    }
+
+    .toc {
+      position: sticky;
+      top: 22px;
+      max-height: calc(100vh - 44px);
+      overflow: auto;
+      padding: 20px 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+    }
+    .toc h2 {
+      margin: 0 0 12px;
+      font-family: var(--heading-font);
+      font-weight: 800;
+      border: 0;
+      padding: 0;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .toc ol { margin: 0; padding-left: 0; list-style: none; }
+    .toc li { margin: 0.35rem 0; padding-left: 0; font-size: 0.84rem; line-height: 1.35; }
+    .toc a { color: var(--muted); text-decoration: none; transition: color 160ms ease; }
+    .toc a:hover { color: var(--primary); text-decoration: underline; }
+
+    .policy {
+      min-width: 0;
+      padding: 42px clamp(24px, 5vw, 58px) 56px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      border-top: 4px solid var(--primary);
+      box-shadow: var(--shadow);
+    }
+
+    .intro {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 34px;
+    }
+    .intro p:first-child { font-weight: 650; font-size: 1.05rem; }
+
+    .policy-section { scroll-margin-top: 22px; }
+    .policy-section + .policy-section {
+      margin-top: 44px;
+      padding-top: 38px;
+      border-top: 1px solid var(--line);
+    }
+    .policy-section.current-beta {
+      margin-left: -18px;
+      margin-right: -18px;
+      padding: 28px 18px 8px;
+      border: 1px solid rgba(34, 197, 94, 0.34);
+      border-left: 4px solid var(--success);
+      border-radius: 14px;
+      background: linear-gradient(180deg, var(--success-soft), rgba(238, 242, 255, 0.62));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.72);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--text);
+      font-family: var(--heading-font);
+      font-weight: 800;
+      font-size: clamp(1.55rem, 3vw, 2rem);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+    h3 {
+      margin: 30px 0 12px;
+      color: var(--accent-dark);
+      font-family: var(--heading-font);
+      font-weight: 800;
+      font-size: 1.18rem;
+      line-height: 1.35;
+    }
+    p { margin: 0.9rem 0; }
+    ul, ol { margin: 0.75rem 0 1.15rem; padding-left: 1.55rem; }
+    li { margin: 0.35rem 0; padding-left: 0.2rem; }
+    li::marker { color: var(--accent); }
+    strong { color: var(--text); }
+
+    .contact-card {
+      display: grid;
+      gap: 0;
+      margin: 20px 0;
+      padding: 8px 20px;
+      border: 1px solid rgba(79, 70, 229, 0.20);
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--primary-soft), var(--accent-soft));
+    }
+    .contact-card > div {
+      display: grid;
+      grid-template-columns: minmax(145px, 190px) 1fr;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(79, 70, 229, 0.14);
+    }
+    .contact-card > div:last-child { border-bottom: 0; }
+    .contact-card dt { font-weight: 750; }
+    .contact-card dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 0.82rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .site-footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(79, 70, 229, 0.32);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; padding-top: 24px; }
+      .toc { position: static; max-height: none; }
+      .toc ol { columns: 2; column-gap: 30px; }
+      .policy { padding: 34px 24px 44px; }
+    }
+
+    @media (max-width: 620px) {
+      .site-header { padding: 40px 20px 36px; }
+      .layout { padding-left: 14px; padding-right: 14px; }
+      .toc ol { columns: 1; }
+      .policy { border-radius: 14px; padding: 30px 19px 40px; }
+      .policy-section.current-beta { margin-left: -8px; margin-right: -8px; padding-left: 12px; padding-right: 12px; }
+      .contact-card > div { grid-template-columns: 1fr; gap: 2px; }
+    }
+
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      .site-header { padding: 0 0 22px; background: #fff; color: #000; }
+      .header-summary, .dates { color: #333; }
+      .dates span { border-color: #ccc; background: transparent; }
+      .layout { display: block; max-width: none; padding: 0; }
+      .toc, .back-to-top { display: none; }
+      .policy { border: 0; box-shadow: none; padding: 0; }
+      .policy-section.current-beta { margin: 0; border-color: #bbb; background: #f6f6f6; }
+      a { color: #000; text-decoration: none; }
+      h2, h3 { break-after: avoid; }
+      ul, ol, p { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+<body id="top">
+<header class="site-header">
+<div class="header-inner">
+<p class="eyebrow">Jobsift</p>
+<h1>Jobsift Privacy Policy</h1>
+<p class="header-summary">How Jobsift handles information across the current beta Chrome extension and possible future services.</p>
+<div aria-label="Policy dates" class="dates"><span><strong>Last updated:</strong> 12 July 2026</span></div>
+</div>
+</header>
+<div class="layout">
+<nav aria-label="Table of contents" class="toc">
+<h2>Contents</h2>
+<ol><li><a href="#section-1-introduction">1. Introduction</a></li><li><a href="#section-2-current-jobsift-beta">2. Current Jobsift Beta</a></li><li><a href="#section-3-current-and-future-features">3. Current and Future Features</a></li><li><a href="#section-4-information-jobsift-may-process">4. Information Jobsift May Process</a></li><li><a href="#section-5-how-jobsift-obtains-information">5. How Jobsift Obtains Information</a></li><li><a href="#section-6-browser-processing-and-storage">6. Browser Processing and Storage</a></li><li><a href="#section-7-how-jobsift-may-use-information">7. How Jobsift May Use Information</a></li><li><a href="#section-8-feedback-and-support-services">8. Feedback and Support Services</a></li><li><a href="#section-9-cookies-and-similar-technologies">9. Cookies and Similar Technologies</a></li><li><a href="#section-10-how-jobsift-may-disclose-information">10. How Jobsift May Disclose Information</a></li><li><a href="#section-11-advertising-and-commercialisation">11. Advertising and Commercialisation</a></li><li><a href="#section-12-aggregated-and-de-identified-information">12. Aggregated and De-Identified Information</a></li><li><a href="#section-13-legal-bases">13. Legal Bases</a></li><li><a href="#section-14-retention">14. Retention</a></li><li><a href="#section-15-user-controls-and-rights">15. User Controls and Rights</a></li><li><a href="#section-16-international-processing">16. International Processing</a></li><li><a href="#section-17-security">17. Security</a></li><li><a href="#section-18-human-access">18. Human Access</a></li><li><a href="#section-19-childrens-privacy">19. Children’s Privacy</a></li><li><a href="#section-20-third-party-websites-and-services">20. Third-Party Websites and Services</a></li><li><a href="#section-21-chrome-web-store-limited-use">21. Chrome Web Store Limited Use</a></li><li><a href="#section-22-changes-to-this-privacy-policy">22. Changes to This Privacy Policy</a></li><li><a href="#section-23-contact-jobsift">23. Contact Jobsift</a></li></ol>
+</nav>
+<main class="policy"><section aria-labelledby="section-1-introduction" class="policy-section"><h2 id="section-1-introduction">1. Introduction</h2><p>Jobsift is an independent software project that develops browser-based tools, software, analytics and related services designed to help users discover, organise, filter and understand employment opportunities and job-market information.</p>
+<p>This Privacy Policy explains how Jobsift may collect, access, use, store, disclose and otherwise process information when you use the Jobsift browser extension, websites, applications, support channels, research products, analytics services and other products or services that refer to this Privacy Policy.</p>
+<p>In this Privacy Policy:</p>
+<ul>
+<li>“Jobsift”, “we”, “us” and “our” refer to the Jobsift project and the persons responsible for developing and operating it.</li>
+<li>“Extension” means the Jobsift Chrome browser extension.</li>
+<li>“Services” means the Extension and any Jobsift websites, applications, accounts, dashboards, subscriptions, support channels, research products, analytics products and related services that refer to this Privacy Policy.</li>
+<li>“User” and “you” refer to any individual or organisation that accesses or uses the Services.</li>
+</ul>
+<p>This Privacy Policy describes both Jobsift’s current practices and the categories of processing that may apply if Jobsift introduces additional Services. A reference to a possible future feature does not mean that the feature is currently active.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-2-current-jobsift-beta" class="policy-section current-beta"><h2 id="section-2-current-jobsift-beta">2. Current Jobsift Beta</h2><p>The current Jobsift beta is a Chrome extension designed to help users review LinkedIn Jobs search results by identifying and optionally hiding promoted, reposted and certain high-applicant job postings on the currently loaded results page.</p>
+<p>The current beta:</p>
+<ul>
+<li>Supports LinkedIn Jobs only.</li>
+<li>Does not require a Jobsift account.</li>
+<li>Does not use a Jobsift backend server.</li>
+<li>Does not use an external artificial-intelligence service.</li>
+<li>Does not upload job titles, company names, job descriptions, scan results or LinkedIn search URLs to Jobsift.</li>
+<li>Does not currently operate cloud synchronisation, billing, subscriptions, advertising, market-intelligence uploads or account-based services.</li>
+<li>Opens an external feedback form only when the user deliberately selects the feedback function.</li>
+</ul>
+<p>All ordinary job-page scanning, classification, filtering, organisation and display processing performed by the current beta takes place within the user’s browser.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-3-current-and-future-features" class="policy-section"><h2 id="section-3-current-and-future-features">3. Current and Future Features</h2><p>Jobsift may progressively introduce additional features, which may include:</p>
+<ul>
+<li>User accounts and authenticated services</li>
+<li>Cloud storage and synchronisation</li>
+<li>Saved jobs and saved searches</li>
+<li>Cross-device access</li>
+<li>Job-search history</li>
+<li>Job-market dashboards</li>
+<li>Salary and compensation insights</li>
+<li>Hiring-demand and skill-demand analysis</li>
+<li>Job-listing quality indicators</li>
+<li>Application or competition indicators</li>
+<li>Personalised recommendations</li>
+<li>Notifications and alerts</li>
+<li>Artificial-intelligence-assisted features</li>
+<li>Research reports and market indices</li>
+<li>Team, employer and enterprise services</li>
+<li>Researcher and investor analytics</li>
+<li>Subscriptions and paid services</li>
+<li>Sponsorships and promoted content</li>
+<li>Commercial market-intelligence products</li>
+</ul>
+<p>Describing a possible future feature does not activate it or authorise Jobsift to begin collecting information for it.</p>
+<p>Before introducing a feature that materially changes how extension-accessed information is collected, transmitted, used or disclosed, Jobsift will update the relevant disclosures, provide a prominent notice and obtain affirmative and informed consent where required.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-4-information-jobsift-may-process" class="policy-section"><h2 id="section-4-information-jobsift-may-process">4. Information Jobsift May Process</h2><p>The information processed depends on the Services and features used.</p>
+<h3>4.1 Job-listing information</h3>
+<p>Jobsift may access or process information displayed on supported employment-related pages or obtained from appropriately authorised sources, including:</p>
+<ul>
+<li>Job titles</li>
+<li>Company and employer names</li>
+<li>Job locations</li>
+<li>Job descriptions</li>
+<li>Job-posting URLs and identifiers</li>
+<li>Posting dates and posting age</li>
+<li>Employment type</li>
+<li>Workplace arrangement</li>
+<li>Seniority and experience level</li>
+<li>Skills, qualifications and requirements</li>
+<li>Salary and compensation information</li>
+<li>Benefits and employment conditions</li>
+<li>Job categories and business functions</li>
+<li>Promoted or sponsored indicators</li>
+<li>Reposted or duplicate-listing indicators</li>
+<li>Publicly displayed application or engagement indicators</li>
+<li>Publicly displayed employer or recruiter information</li>
+<li>Other publicly displayed job-listing attributes</li>
+</ul>
+<p>Not every category is processed by every Jobsift feature.</p>
+<h3>4.2 Supported search-context information</h3>
+<p>Where necessary to provide a Jobsift feature, Jobsift may process:</p>
+<ul>
+<li>Search keywords</li>
+<li>Search locations</li>
+<li>Selected filters</li>
+<li>Sort preferences</li>
+<li>Pagination status</li>
+<li>Search-result identifiers</li>
+<li>Selected job listings</li>
+<li>Supported-page navigation</li>
+<li>Interactions with Jobsift filters and controls</li>
+<li>Dates and times associated with scans or requests</li>
+<li>The type of supported page on which Jobsift is used</li>
+</ul>
+<p>Jobsift is not designed to monitor browsing activity on unrelated websites.</p>
+<h3>4.3 Settings and preferences</h3>
+<p>Jobsift may process or store settings such as:</p>
+<ul>
+<li>Whether Jobsift is enabled</li>
+<li>Selected filtering preferences</li>
+<li>Automatic filtering preferences</li>
+<li>Display and summary settings</li>
+<li>Notification settings</li>
+<li>Language and regional preferences</li>
+<li>Saved-job or saved-search preferences</li>
+<li>Synchronisation settings</li>
+<li>Privacy and consent choices</li>
+</ul>
+<h3>4.4 Technical and diagnostic information</h3>
+<p>Depending on the active feature, Jobsift may process:</p>
+<ul>
+<li>Extension or application version</li>
+<li>Browser type and version</li>
+<li>Browser user-agent information</li>
+<li>Operating-system information</li>
+<li>General device type</li>
+<li>Language and locale</li>
+<li>Dates and timestamps</li>
+<li>Error and crash information</li>
+<li>Performance and reliability information</li>
+<li>Scan status and duration</li>
+<li>General feature-use information</li>
+<li>Supported page type</li>
+<li>Network or request status</li>
+<li>Security and abuse-prevention signals</li>
+</ul>
+<p>Jobsift will seek to avoid including complete job descriptions, search histories or unnecessary personal information in technical logs.</p>
+<h3>4.5 Information provided voluntarily</h3>
+<p>Jobsift may process information that a user voluntarily provides when the user:</p>
+<ul>
+<li>Submits feedback</li>
+<li>Requests support</li>
+<li>Contacts Jobsift</li>
+<li>Joins a waitlist</li>
+<li>Subscribes to communications</li>
+<li>Responds to a survey</li>
+<li>Participates in research</li>
+<li>Requests a demonstration</li>
+<li>Reports a job listing</li>
+<li>Creates an account</li>
+<li>Purchases a product or service</li>
+<li>Communicates with Jobsift through another channel</li>
+</ul>
+<p>This information may include contact details, message contents, attachments, research responses and any other information the user chooses to provide.</p>
+<h3>4.6 Account information</h3>
+<p>If Jobsift introduces accounts, Jobsift may process:</p>
+<ul>
+<li>Name or display name</li>
+<li>Email address</li>
+<li>Account identifier</li>
+<li>Authentication-provider information</li>
+<li>Organisation or team name</li>
+<li>Account role</li>
+<li>Subscription status</li>
+<li>Account preferences</li>
+<li>Saved jobs, searches and dashboard information</li>
+<li>Account-related communications</li>
+</ul>
+<p>Where authentication is performed by an independent identity provider, Jobsift does not intend to receive the password used with that provider.</p>
+<h3>4.7 Payment information</h3>
+<p>If Jobsift introduces paid Services, Jobsift or its payment provider may process:</p>
+<ul>
+<li>Billing name and address</li>
+<li>Product or subscription selected</li>
+<li>Transaction amount and currency</li>
+<li>Payment status</li>
+<li>Invoice and tax information</li>
+<li>Payment-provider customer and transaction identifiers</li>
+</ul>
+<p>Jobsift does not intend to directly store complete payment-card information where payments are handled by an independent payment provider.</p>
+<h3>4.8 Independently obtained research information</h3>
+<p>Jobsift may obtain information independently of an individual user’s Extension activity from:</p>
+<ul>
+<li>Publicly available sources</li>
+<li>Open datasets</li>
+<li>Licensed or authorised datasets</li>
+<li>Employers and business customers</li>
+<li>Research participants</li>
+<li>Data contributors</li>
+<li>Commercial and research partners</li>
+<li>Aggregated or de-identified datasets</li>
+<li>Separately disclosed online Jobsift Services</li>
+</ul>
+<p>Information obtained through an individual user’s Chrome extension permissions remains subject to the restrictions described in the Chrome Web Store Limited Use section below.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-5-how-jobsift-obtains-information" class="policy-section"><h2 id="section-5-how-jobsift-obtains-information">5. How Jobsift Obtains Information</h2><p>Depending on the active Service, Jobsift may obtain information:</p>
+<ul>
+<li>Directly from the user</li>
+<li>From supported pages accessed while the user operates an active Jobsift feature</li>
+<li>Through Chrome extension APIs and permissions</li>
+<li>From the user’s browser or device</li>
+<li>From Jobsift websites and applications</li>
+<li>From authentication and payment providers</li>
+<li>From feedback and support providers</li>
+<li>From employers and business customers</li>
+<li>From data contributors and research participants</li>
+<li>From publicly available or appropriately licensed sources</li>
+<li>Through authorised commercial or research arrangements</li>
+</ul>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-6-browser-processing-and-storage" class="policy-section"><h2 id="section-6-browser-processing-and-storage">6. Browser Processing and Storage</h2><h3>6.1 Local job-page processing</h3>
+<p>All ordinary job-page scanning, classification, filtering, organisation and display processing performed by the current Jobsift beta takes place within the user’s browser.</p>
+<p>During ordinary scanning and filtering, the current beta does not transmit job titles, company names, job descriptions, scan results, selected listings, search keywords or LinkedIn search URLs to Jobsift, a Jobsift backend server, an analytics provider, an artificial-intelligence provider or an advertising platform.</p>
+<h3>6.2 Chrome local storage</h3>
+<p>Jobsift uses Chrome local extension storage for runtime information such as:</p>
+<ul>
+<li>Scan status</li>
+<li>Current-page summary counts</li>
+<li>Result-page state</li>
+<li>Pagination state</li>
+<li>Manual refresh state</li>
+<li>Content-script operational state</li>
+</ul>
+<p>A locally stored result-page identifier may include LinkedIn search keywords, search location, pagination and selected LinkedIn filter parameters.</p>
+<h3>6.3 Chrome synchronised storage</h3>
+<p>Jobsift uses Chrome synchronised extension storage for user preferences such as:</p>
+<ul>
+<li>Whether Jobsift is enabled</li>
+<li>Selected filtering options</li>
+<li>Automatic filtering preferences</li>
+<li>Display preferences</li>
+<li>Privacy and consent settings</li>
+</ul>
+<p>Where the user has enabled Chrome Sync, Google Chrome may synchronise these preferences between Chrome browsers in which the user is signed in.</p>
+<p>Jobsift does not independently receive these synchronised preferences through a Jobsift server.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-7-how-jobsift-may-use-information" class="policy-section"><h2 id="section-7-how-jobsift-may-use-information">7. How Jobsift May Use Information</h2><p>Jobsift may use relevant information to:</p>
+<h3>7.1 Provide the Services</h3>
+<ul>
+<li>Scan and organise job-search results</li>
+<li>Identify job-posting attributes</li>
+<li>Detect promoted, reposted or duplicate listings</li>
+<li>Label, rank, show or hide listings</li>
+<li>Apply user-selected preferences</li>
+<li>Display scan summaries</li>
+<li>Save settings</li>
+<li>Coordinate scans following page changes</li>
+<li>Provide requested support</li>
+<li>Respond to feedback</li>
+<li>Operate accounts and subscriptions</li>
+<li>Provide saved jobs, dashboards and notifications</li>
+<li>Deliver other Services requested by the user</li>
+</ul>
+<h3>7.2 Operate, secure and improve Jobsift</h3>
+<ul>
+<li>Diagnose errors</li>
+<li>Maintain reliability</li>
+<li>Prevent fraud and abuse</li>
+<li>Protect users and Jobsift systems</li>
+<li>Improve extraction and classification accuracy</li>
+<li>Evaluate false positives and false negatives</li>
+<li>Test and improve user-facing functionality</li>
+<li>Conduct quality assurance</li>
+<li>Maintain service integrity</li>
+<li>Comply with applicable platform requirements</li>
+</ul>
+<h3>7.3 Develop research and analytics products</h3>
+<p>Where Jobsift introduces separately disclosed research or market-intelligence Services, Jobsift may use information obtained from appropriately authorised sources to:</p>
+<ul>
+<li>Analyse hiring demand</li>
+<li>Identify employment and recruitment trends</li>
+<li>Study posting and reposting behaviour</li>
+<li>Analyse salary and skill trends</li>
+<li>Compare industries, employers, business functions and locations</li>
+<li>Develop benchmarks, reports, indices and dashboards</li>
+<li>Conduct labour-market research</li>
+<li>Develop commercial analytics and forecasting products</li>
+<li>Support business, economic and investment research</li>
+</ul>
+<p>Jobsift will not use identifiable individual Extension browsing activity or job-search history to create unrelated commercial market-intelligence products.</p>
+<p>Chrome extension-accessed information will not be commercialised merely because it has been aggregated, anonymised, de-identified or transformed.</p>
+<h3>7.4 Artificial-intelligence features</h3>
+<p>Jobsift may introduce optional artificial-intelligence-assisted features.</p>
+<p>Before transmitting extension-accessed information to an external artificial-intelligence provider, Jobsift will:</p>
+<ul>
+<li>Identify the provider</li>
+<li>Explain what information will be transmitted</li>
+<li>Explain the purpose of the processing</li>
+<li>Explain relevant retention and model-training practices</li>
+<li>Provide a prominent in-product notice</li>
+<li>Obtain affirmative and informed consent where required</li>
+<li>Transmit only the information reasonably necessary for the requested feature</li>
+<li>Provide a method to disable the feature or withdraw consent for future transmissions</li>
+</ul>
+<p>The current beta does not send job-page information to an external artificial-intelligence service.</p>
+<h3>7.5 Communications</h3>
+<p>Jobsift may use contact information to:</p>
+<ul>
+<li>Respond to enquiries</li>
+<li>Provide support</li>
+<li>Send service and security notices</li>
+<li>Communicate product or policy changes</li>
+<li>Confirm transactions</li>
+<li>Send requested information</li>
+<li>Send promotional communications where permitted</li>
+</ul>
+<p>Users may opt out of non-essential promotional communications through the method stated in the communication or by contacting Jobsift.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-8-feedback-and-support-services" class="policy-section"><h2 id="section-8-feedback-and-support-services">8. Feedback and Support Services</h2><p>When a user deliberately selects <strong>Send feedback</strong>, Jobsift opens a form operated by Tally.</p>
+<p>Jobsift automatically provides the form with:</p>
+<ul>
+<li>The Jobsift extension version</li>
+<li>Browser user-agent information</li>
+<li>A coarse description of the current page type</li>
+<li>A timestamp</li>
+<li>A diagnostic object containing the same categories of information</li>
+</ul>
+<p>Jobsift does not automatically provide Tally with:</p>
+<ul>
+<li>Job titles</li>
+<li>Company names</li>
+<li>Scan results</li>
+<li>Summary counts</li>
+<li>Search keywords</li>
+<li>Search location</li>
+<li>The complete LinkedIn URL</li>
+<li>Selected job identifiers</li>
+<li>Screenshots</li>
+</ul>
+<p>The user may separately provide information through the Tally form, including feedback text or contact details requested by the form.</p>
+<p>Tally processes submitted information according to its own terms and privacy practices.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-9-cookies-and-similar-technologies" class="policy-section"><h2 id="section-9-cookies-and-similar-technologies">9. Cookies and Similar Technologies</h2><p>The current Extension does not use website cookies to provide ordinary job-page scanning.</p>
+<p>Jobsift websites or future online Services may use cookies, browser storage, pixels, tags or similar technologies to:</p>
+<ul>
+<li>Maintain sessions</li>
+<li>Remember preferences</li>
+<li>Authenticate users</li>
+<li>Secure accounts</li>
+<li>Measure reliability and performance</li>
+<li>Understand feature adoption</li>
+<li>Prevent fraud and abuse</li>
+<li>Remember privacy choices</li>
+<li>Measure general campaign performance</li>
+</ul>
+<p>Where required, Jobsift will provide appropriate notice, controls or consent mechanisms before using such technologies.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-10-how-jobsift-may-disclose-information" class="policy-section"><h2 id="section-10-how-jobsift-may-disclose-information">10. How Jobsift May Disclose Information</h2><p>Jobsift may disclose information that it actually receives to:</p>
+<h3>10.1 Service providers</h3>
+<p>Service providers may assist Jobsift with:</p>
+<ul>
+<li>Website and policy hosting</li>
+<li>Feedback collection</li>
+<li>Email communications</li>
+<li>Cloud infrastructure</li>
+<li>Authentication</li>
+<li>Payment processing</li>
+<li>Customer support</li>
+<li>Security and error monitoring</li>
+<li>Product operations</li>
+<li>Research and survey administration</li>
+<li>Professional services</li>
+</ul>
+<p>Current providers may include:</p>
+<ul>
+<li>Tally, for voluntary feedback submissions</li>
+<li>GitHub, for hosting informational pages</li>
+<li>Google, for email and browser services</li>
+</ul>
+<p>A service provider may process information only for the relevant service and subject to applicable legal, contractual and provider terms.</p>
+<h3>10.2 Business customers and research partners</h3>
+<p>Where Jobsift offers research, analytics or business Services, Jobsift may provide customers or partners with:</p>
+<ul>
+<li>Aggregated market statistics</li>
+<li>De-identified trends</li>
+<li>Employer or industry benchmarks</li>
+<li>Job-market reports</li>
+<li>Research outputs</li>
+<li>Analytical dashboards</li>
+<li>Market indices</li>
+</ul>
+<p>Jobsift does not ordinarily provide these recipients with identifiable individual Extension job-search histories.</p>
+<h3>10.3 At the user’s direction</h3>
+<p>Jobsift may disclose information where the user requests, directs or clearly authorises the disclosure.</p>
+<h3>10.4 Legal and safety purposes</h3>
+<p>Jobsift may disclose information that it actually possesses where reasonably necessary to:</p>
+<ul>
+<li>Comply with applicable law</li>
+<li>Respond to valid legal process</li>
+<li>Investigate fraud, abuse or security incidents</li>
+<li>Protect users or the public</li>
+<li>Protect Jobsift’s rights, property or safety</li>
+<li>Establish, exercise or defend legal claims</li>
+</ul>
+<p>Jobsift cannot disclose ordinary job-page scanning information that remains within the user’s browser because Jobsift does not receive or possess that information.</p>
+<h3>10.5 Corporate or project transactions</h3>
+<p>If Jobsift is involved in a financing, incorporation, acquisition, restructuring, reorganisation or transfer of all or part of the project, information actually held by Jobsift may be disclosed in connection with the proposed or completed transaction.</p>
+<p>A corporate transaction does not permit Jobsift to retrieve information that remains locally on a user’s device.</p>
+<p>Where platform rules or applicable law require explicit prior consent for a transfer, Jobsift will seek that consent before completing the transfer.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-11-advertising-and-commercialisation" class="policy-section"><h2 id="section-11-advertising-and-commercialisation">11. Advertising and Commercialisation</h2><p>Jobsift may introduce contextual advertisements, sponsorships, subscription offers, employer-sponsored content, promoted content or non-personalised promotional messages in future online Services.</p>
+<p>Jobsift does not use an individual user’s Extension browsing activity or job-search history to:</p>
+<ul>
+<li>Create personalised advertising profiles</li>
+<li>Conduct cross-site behavioural advertising</li>
+<li>Build advertising audiences</li>
+<li>Sell information to data brokers</li>
+<li>Perform unrelated surveillance</li>
+<li>Determine creditworthiness</li>
+<li>Make lending, insurance, housing or final employment-eligibility decisions</li>
+</ul>
+<p>Jobsift may develop commercial research and market-intelligence products using independently obtained, appropriately licensed, employer-provided, business-provided or separately contributed information.</p>
+<p>Information obtained through an individual user’s Extension permissions will remain subject to the Chrome Web Store User Data Policy and will not be used for unrelated commercial products.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-12-aggregated-and-de-identified-information" class="policy-section"><h2 id="section-12-aggregated-and-de-identified-information">12. Aggregated and De-Identified Information</h2><p>Jobsift may create aggregated, statistical, anonymised or de-identified information from information lawfully obtained through Jobsift Services or independent sources.</p>
+<p>Jobsift may use sufficiently aggregated or de-identified information for:</p>
+<ul>
+<li>Research</li>
+<li>Analytics</li>
+<li>Statistics</li>
+<li>Service improvement</li>
+<li>Business planning</li>
+<li>Market reports</li>
+<li>Benchmarks</li>
+<li>Commercial products</li>
+</ul>
+<p>However, the Chrome Web Store Limited Use restrictions continue to apply to information obtained through Extension permissions, including aggregated, anonymised, de-identified and derived information.</p>
+<p>Jobsift will not use technical de-identification as a means to avoid applicable Chrome Web Store restrictions.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-13-legal-bases" class="policy-section"><h2 id="section-13-legal-bases">13. Legal Bases</h2><p>Depending on the user’s location and the feature involved, Jobsift may process information based on:</p>
+<ul>
+<li>The user’s consent</li>
+<li>Performance of a contract</li>
+<li>Steps requested before entering into a contract</li>
+<li>Compliance with a legal obligation</li>
+<li>Legitimate interests in operating, securing and improving the Services</li>
+<li>Protection of users or other individuals</li>
+<li>Other lawful grounds recognised by applicable law</li>
+</ul>
+<p>Where Jobsift relies on consent, the user may withdraw consent through the relevant product controls or by contacting Jobsift.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-14-retention" class="policy-section"><h2 id="section-14-retention">14. Retention</h2><p>Jobsift retains information only for as long as reasonably necessary for:</p>
+<ul>
+<li>The purpose for which it was obtained</li>
+<li>Providing the requested Services</li>
+<li>Security and fraud prevention</li>
+<li>Responding to support or feedback</li>
+<li>Resolving disputes</li>
+<li>Enforcing agreements</li>
+<li>Maintaining legally required records</li>
+<li>Establishing or defending legal claims</li>
+<li>Producing valid aggregated or de-identified research</li>
+</ul>
+<p>Local Chrome extension information may remain until the user resets Jobsift, clears browser or extension storage, disables relevant synchronisation or uninstalls the Extension.</p>
+<p>Feedback and support communications may be retained for a reasonable period based on the nature of the request.</p>
+<p>Account and transaction information, if introduced, may be retained while the relevant account or transaction records remain necessary.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-15-user-controls-and-rights" class="policy-section"><h2 id="section-15-user-controls-and-rights">15. User Controls and Rights</h2><p>Depending on the active feature and applicable law, users may be able to:</p>
+<ul>
+<li>Enable or disable Jobsift</li>
+<li>Change filtering preferences</li>
+<li>Clear locally stored information</li>
+<li>Reset Jobsift</li>
+<li>Disable Chrome synchronisation</li>
+<li>Uninstall the Extension</li>
+<li>Opt in to or out of optional online features</li>
+<li>Withdraw consent</li>
+<li>Access eligible personal information</li>
+<li>Correct inaccurate information</li>
+<li>Request deletion</li>
+<li>Object to or restrict certain processing</li>
+<li>Request a portable copy of eligible information</li>
+<li>Opt out of legally defined sale, sharing or targeted advertising</li>
+<li>Lodge a complaint with a relevant authority</li>
+</ul>
+<p>Jobsift may need to verify a requester’s identity before completing a request involving remotely held personal information.</p>
+<p>Jobsift generally cannot access or delete information that remains exclusively within the user’s browser. Users can remove such information through browser and Extension controls.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-16-international-processing" class="policy-section"><h2 id="section-16-international-processing">16. International Processing</h2><p>Where Jobsift uses online service providers, information may be processed in jurisdictions outside the user’s place of residence.</p>
+<p>Where required, Jobsift will use appropriate contractual, organisational or technical safeguards for international processing.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-17-security" class="policy-section"><h2 id="section-17-security">17. Security</h2><p>Jobsift uses reasonable administrative, organisational and technical measures designed to protect information against unauthorised access, disclosure, loss, misuse, alteration or destruction.</p>
+<p>Depending on the feature, these measures may include:</p>
+<ul>
+<li>Data minimisation</li>
+<li>Secure development practices</li>
+<li>Access controls</li>
+<li>Encryption in transit</li>
+<li>Restricted administrative access</li>
+<li>Dependency and vulnerability management</li>
+<li>Provider reviews</li>
+<li>Incident-response procedures</li>
+</ul>
+<p>No software, device, storage or transmission system can be guaranteed to be completely secure.</p>
+<p>Information stored in a browser extension may be accessible to another person who has access to the user’s device or Chrome profile.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-18-human-access" class="policy-section"><h2 id="section-18-human-access">18. Human Access</h2><p>Jobsift personnel and service providers cannot access information that remains locally within the user’s browser during ordinary scanning and filtering.</p>
+<p>Human access to information received by Jobsift may occur only where reasonably necessary to:</p>
+<ul>
+<li>Provide support requested by the user</li>
+<li>Process feedback voluntarily submitted by the user</li>
+<li>Investigate a security incident</li>
+<li>Prevent fraud or abuse</li>
+<li>Maintain essential service operations</li>
+<li>Comply with applicable law</li>
+<li>Perform specifically disclosed and authorised processing</li>
+</ul>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-19-childrens-privacy" class="policy-section"><h2 id="section-19-childrens-privacy">19. Children’s Privacy</h2><p>Jobsift is not directed to individuals under 16 years of age or the minimum age required to use the relevant supported employment platform, whichever is higher.</p>
+<p>Jobsift does not knowingly collect personal information from children where legally required consent has not been obtained.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-20-third-party-websites-and-services" class="policy-section"><h2 id="section-20-third-party-websites-and-services">20. Third-Party Websites and Services</h2><p>Jobsift may interact with or link to independent third-party services, including:</p>
+<ul>
+<li>Employment platforms</li>
+<li>Browser providers</li>
+<li>Hosting providers</li>
+<li>Feedback services</li>
+<li>Authentication providers</li>
+<li>Payment providers</li>
+<li>Email providers</li>
+<li>Research and data providers</li>
+</ul>
+<p>Independent third parties process information according to their own terms and privacy policies.</p>
+<p>Jobsift is not affiliated with, endorsed by, authorised by or sponsored by LinkedIn Corporation or its affiliates.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-21-chrome-web-store-limited-use" class="policy-section"><h2 id="section-21-chrome-web-store-limited-use">21. Chrome Web Store Limited Use</h2><p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+<p>Jobsift uses information accessed through Chrome extension permissions only to provide or improve Jobsift’s disclosed user-facing purpose and related security, reliability, fraud-prevention and user-requested support functions.</p>
+<p>Jobsift does not use, transfer, sell or license information obtained through Extension permissions for:</p>
+<ul>
+<li>Personalised advertising</li>
+<li>Cross-site behavioural advertising</li>
+<li>Data-broker services</li>
+<li>Information-reseller services</li>
+<li>Unrelated profiling</li>
+<li>Creditworthiness assessment</li>
+<li>Lending</li>
+<li>Insurance eligibility</li>
+<li>Unrelated surveillance</li>
+<li>Purposes unrelated to Jobsift’s disclosed user-facing functionality</li>
+</ul>
+<p>These restrictions apply to raw Extension-accessed information and to information aggregated, anonymised, de-identified or derived from that information.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-22-changes-to-this-privacy-policy" class="policy-section"><h2 id="section-22-changes-to-this-privacy-policy">22. Changes to This Privacy Policy</h2><p>Jobsift may update this Privacy Policy to reflect:</p>
+<ul>
+<li>New products or features</li>
+<li>Changes in information-handling practices</li>
+<li>Changes in service providers</li>
+<li>Security improvements</li>
+<li>Legal or regulatory requirements</li>
+<li>Chrome Web Store or platform requirements</li>
+<li>Clarifications</li>
+</ul>
+<p>Jobsift will not begin transmitting information that is currently processed only within the user’s browser merely by updating this Privacy Policy.</p>
+<p>Before introducing a feature that sends extension-accessed job-page content or job-search information to a Jobsift server, cloud service or artificial-intelligence provider, Jobsift will:</p>
+<ul>
+<li>Update the Privacy Policy and relevant Chrome Web Store disclosures</li>
+<li>Provide a prominent notice within the Extension</li>
+<li>Identify the information to be transmitted</li>
+<li>Identify the recipient or category of recipient</li>
+<li>Explain the purpose of processing</li>
+<li>Explain relevant retention and model-training practices</li>
+<li>Obtain affirmative and informed consent where required</li>
+<li>Provide relevant controls to disable the feature</li>
+</ul>
+<p>Continued use of Jobsift’s local features will not, by itself, constitute consent to begin off-device processing.</p>
+<a class="back-to-top" href="#top">Back to top</a></section><section aria-labelledby="section-23-contact-jobsift" class="policy-section"><h2 id="section-23-contact-jobsift">23. Contact Jobsift</h2><p>For privacy questions, requests or concerns, contact:</p><dl class="contact-card"><div><dt>Project:</dt><dd>Jobsift</dd></div><div><dt>Privacy contact:</dt><dd><a href="mailto:hsnbrg.ships@gmail.com">hsnbrg.ships@gmail.com</a></dd></div></dl><a class="back-to-top" href="#top">Back to top</a></section></main>
+</div>
+<footer class="site-footer">
+<p>Jobsift Privacy Policy · Hosted as a public informational page.</p>
+</footer>
+</body>
+</html>
