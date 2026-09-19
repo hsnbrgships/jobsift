@@ -1,53 +1,67 @@
 <div align="center">
 
-# Jobsift Privacy Policy
+# JobSift
 
-**Official privacy policy for the Jobsift Chrome extension**
+**Choose what stays in your LinkedIn Jobs results.**
 
-Jobsift helps users organise and filter supported job-search results directly within their browser.
+JobSift is a Chrome extension that identifies Promoted, Reposted and 100+ applicants listings on LinkedIn Jobs, then lets you choose which types stay visible.
 
-[View the Privacy Policy](https://hsnbrgships.github.io/jobsift-privacy/)
+[Website](https://getjobsift.com/) · [Get JobSift](https://chromewebstore.google.com/detail/jobsift/modnocfkhklnlaaeihnlepidkfaecgdl) · [Privacy Policy](https://getjobsift.com/privacy/)
 
 </div>
 
 ---
 
-## About Jobsift
+## About JobSift
 
-Jobsift is an independent browser-extension project designed to help users review LinkedIn Jobs search results by identifying and optionally hiding promoted, reposted, and certain high-applicant job postings.
+LinkedIn Jobs can get noisy.
 
-The current beta performs ordinary job-page scanning, classification, filtering, and display processing locally within the user’s browser.
+JobSift helps make results easier to scan by marking common listing signals directly in your search results:
 
-## Current Beta Data Practices
+- **Promoted**
+- **Reposted**
+- **100+ applicants / applied**
 
-* Supports LinkedIn Jobs
-* Does not require a Jobsift account
-* Does not use a Jobsift backend server
-* Does not send job-page information to an external AI service
-* Does not upload job titles, company names, job descriptions, scan results, or LinkedIn search URLs to Jobsift
-* Opens an external feedback form only when deliberately selected by the user
+You can then choose which listing types remain visible and continue searching on LinkedIn as usual.
 
-## Privacy Policy
+## How it works
 
-The complete and current Jobsift Privacy Policy is published through GitHub Pages:
+1. Search for jobs using LinkedIn's supported Jobs search.
+2. JobSift automatically scans the results as they load.
+3. Relevant listings are marked with JobSift signals.
+4. Choose which listing types you want to keep visible.
 
-**[Read the Jobsift Privacy Policy](https://hsnbrgships.github.io/jobsift-privacy/)**
+JobSift currently supports LinkedIn's:
 
-The policy covers:
+`/jobs/search-results/`
 
-* Current local browser processing
-* Chrome local and synchronised storage
-* Voluntary feedback submissions
-* Possible future online and AI-assisted features
-* User controls and privacy rights
-* Chrome Web Store Limited Use requirements
+search experience.
+
+## Privacy
+
+JobSift performs its supported job-page scanning and filtering locally in your browser.
+
+It does not require a JobSift account or backend service for its current core functionality.
+
+For full details, read the:
+
+**[JobSift Privacy Policy](https://getjobsift.com/privacy/)**
+
+## This repository
+
+This repository hosts the public JobSift website, including:
+
+- the main landing page
+- the JobSift privacy policy
+- supporting website assets
+- the custom domain configuration for `getjobsift.com`
 
 ## Contact
 
-For privacy questions, requests, or concerns:
+For questions, feedback or privacy requests:
 
-**Email:** [hsnbrg.ships@gmail.com](mailto:hsnbrg.ships@gmail.com)
+**hsnbrg.ships@gmail.com**
 
 ---
 
-*Last updated: 12 July 2026*
+**JobSift** — less noise, clearer LinkedIn Jobs results.
